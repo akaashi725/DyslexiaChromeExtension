@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<style>
+	BODY{width:520px;min-height: 250px;}
+	#applybutton{
+		margin-right:-2px;
+	}
+	#quitbutton{
+		margin-left:-3px;
+	}
+	#btn_group1 button{
+		border:1px solid teal;
+		background-color:rgba(0,0,0,0);
+		color: teal;
+		padding:5px;
+	}
+	#color1{
+		background-color:rgba(254,235,201,100);
+	}
+	#color2{
+		background-color:rgba(125,255,176,50);
+	}
+	#color3{
+		background-color:rgba(207,236,110,100);
+	}
+	#color4{
+		background-color:rgba(204,236,239,100);
+	}
+	#color5{
+		background-color:rgba(221,212,232,100);
+	}
+	#btn_group2 button{
+		border:1px solid black;
+
+	}
+</style>
+<script src = "popup.js"></script>
+</head>
+<body>
+	<p style = "color:black; font-size:200%; text-align:center; font-family: 'Jua', sans-serif;" >안  녕  글  자  야</p>
+	
+	<p style = "color:teal; font-size:100%; text-align:center" >H e l l o ,  W o r d !<br>난독증 완화를 위한 폰트 및 배경색 지정 확장 프로그램<br>Developed by. HAS 10 최은우, 임소현, 강민지, 진유빈</p>
+	<hr>
+	<div id ="btn_group1">
+		<p>난독증 완화 폰트 적용하기</p>
+		<button id = 'applybutton'>적용</button>
+		<button id = 'quitbutton'>취소</button>
+		<script type="text/javascript" src ='fontchange.js'></script>
+	</div>
+	<hr>
+	<div>
+		<p>폰트 크기 수정하기</p>
+		<!---<script src = 'justincase.js'></script>--->
+		<!---<input type = "range" name = "slidebar">--->
+		10
+		<input name="slider-fill" id="fontsizeslider" type="range" min="10" max ="30" step="1" data-highlight="true">
+		30
+		<button id = 'resetbutton'>폰트 크기 초기화</button>
+		<script type = 'text/javaScript' src = 'fontsize.js'></script>
+		<script type ='text/javascript' src = 'sliderfunc.js'></script>
+	</div>
+	<hr>
+	<div>
+		<p>배경 색 설정하기</p>
+		<div id = "btn_group2">
+			<button id ='color1'>1</button>
+			<button id = 'color2'>2</button>
+			<button id = 'color3'>3</button>
+			<button id = 'color4'>4</button>
+			<button id = 'color5'>5</button>
+		</div>
+		Opacity
+		<input name ="slider-fill-2" id="silder-fill-2" type ="range" min = "0" max="100" step ="2" value = "50" data-highlight = "true">
+	</div>
+</body>
+</html>

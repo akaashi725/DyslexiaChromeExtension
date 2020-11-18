@@ -1,0 +1,13 @@
+{
+  "name": "Hello, Word!",
+  "version": "0.0.0.1",
+  "manifest_version": 2,
+  "description": "Customize font settings for dyslexic people.",
+  "browser_action":{
+    "default_popup":"popup.html"
+  },
+  "permissions": [
+    "fontSettings",
+    "tabs",
+    "<all_urls>"]
+}
